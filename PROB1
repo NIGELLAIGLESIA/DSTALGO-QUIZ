@@ -1,0 +1,23 @@
+using System;
+
+class Quiz
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Name: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Course: ");
+        string course = Console.ReadLine();
+
+        Console.Write("Year: ");
+        string year = Console.ReadLine();
+
+        Console.Write("Gender: ");
+        string gender = Console.ReadLine();
+
+    }
+}
