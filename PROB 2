@@ -1,0 +1,47 @@
+using System;
+
+class Quiz
+{
+    public static void Main(string[] args)
+    {
+        // Inputing three numbers
+
+        Console.Write("Enter First Number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Second Number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter Third Number: ");
+        int num3 = Convert.ToInt32(Console.ReadLine());
+
+        // Calculating the sum, average, product, largest, smallest, and range
+
+        int sum = num1 + num2 + num3;
+        double average = sum / 3.0;
+        int product = num1 * num2 * num3;
+
+        int largest = Math.Max(num1, Math.Max(num2, num3));
+        int smallest = Math.Min(num1, Math.Min(num2, num3));
+        int range = largest - smallest;
+
+        // The results of the calculations
+
+        Console.WriteLine("The sum is: " + sum);
+        Console.WriteLine("The average is: " + average);
+        Console.WriteLine("The product is: " + product);
+        Console.WriteLine("The largest number is: " + largest);
+        Console.WriteLine("The smallest number is: " + smallest);
+        Console.WriteLine("The range is: " + range);
+
+        // Use of Logical Operators
+        
+        bool allPositive = num1 > 0 && num2 > 0 && num3 > 0;
+        bool atLeastOneZero = num1 == 0 || num2 == 0 || num3 == 0;
+        bool allEqual = num1 == num2 && num2 == num3;
+
+        Console.WriteLine("All numbers are positive: " + allPositive);
+        Console.WriteLine("At least one number is zero: " + atLeastOneZero);
+        Console.WriteLine("All numbers are equal: " + allEqual);
+    }
+}
